@@ -22,7 +22,7 @@
         <nav class="header-nav">
             <div class="header-menu">
             <ul class="header-list list">
-                <li class="header-item"><a class="text link header-first-link" href="./index.html">Студия</a></li>
+                <li class="header-item"><a class="text link header-first-link current" href="./index.html">Студия</a></li>
                 <li class="header-item"><a class="text link header-link" href="./portfolio.html">Портфолио</a></li>
                 <li class="header-item"><a class="text link header-link" href="#contacts">Контакты</a></li>
             </ul>
@@ -62,7 +62,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title post-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="pointer hero-btn post-title" >Заказать услугу</button>
+            <button type="button" class="pointer hero-btn post-title" data-modal-open>Заказать услугу</button>
         </div>
         </section>
         <section class="hero-list">
@@ -120,13 +120,25 @@
             <h2 class="post-title work-title">Чем мы занимаемся</h2>
             <ul class="list work-list">
                 <li class="work-item">
-                    <img class="work-image" src="./images/box1.jpg" alt="работа на планшете" width="370" height="294" />
+                    <div class="work-item-wrap">
+                        <img class="work-image" src="./images/box1.jpg" alt="работа на планшете" width="370" height="294" />
+                        <p class="work-img-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                    </div>
+                    
                 </li>
                 <li class="work-item">
-                    <img class="work-image" src="./images/box2.jpg" alt="синхронизация с телефоном" width="370" height="294" />
+                    <div class="work-item-wrap">
+                        <img class="work-image" src="./images/box2.jpg" alt="синхронизация с телефоном" width="370" height="294" />
+                        <p class="work-img-text">мОБЫЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                    </div>
+                    
                 </li>
                 <li class="work-item">
-                    <img class="work-image" src="./images/box3.jpg" alt="графика" width="370" height="294" />
+                    <div class="work-item-wrap">
+                        <img class="work-image" src="./images/box3.jpg" alt="графика" width="370" height="294" />
+                        <p class="work-img-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                    </div>
+                   
                 </li>
             </ul>
             </div>
@@ -391,5 +403,14 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                X
+            </button>
+            
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
